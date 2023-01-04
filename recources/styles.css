@@ -276,6 +276,7 @@ div.logo {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -304,7 +305,8 @@ div.logo {
 
 @media only screen and (max-width: 799px) {
     .we-do {
-        height: 40rem;
+        height: auto;
+        margin: 2rem 0rem;
     }
     .welcome-snippet {
         margin-top: 0;
