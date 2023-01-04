@@ -230,7 +230,7 @@ div.logo {
     flex-shrink: 1;
     flex-grow: 0;
     color: white;
-    letter-spacing: 0.13rem;
+    letter-spacing: 0.1rem;
     line-height: 2rem;
     word-spacing: 0.3rem;
     margin-left: 1rem;
@@ -271,6 +271,7 @@ div.logo {
     justify-content: center;
     flex-direction: column;
     flex-shrink: 1;
+    text-align: center;
 }
 
 .container_we-do h2 {
