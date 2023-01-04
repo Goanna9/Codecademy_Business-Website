@@ -98,7 +98,7 @@ div.logo {
           @media only screen and (max-width: 920px) {
             .dropdown {
                 display: block;
-                align-items: flex-end ;
+                align-items: flex-start ;
             }  
             nav {
                 display: none;
@@ -108,6 +108,7 @@ div.logo {
             }
             header {
                 text-align: center;
+                flex-direction: row-reverse;
             }
         }
         
@@ -116,6 +117,7 @@ div.logo {
             height: 6rem;
           }
         }
+
         
           /* Dropdown button */
           .dropdown .dropbtn {
