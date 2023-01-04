@@ -253,7 +253,23 @@ div.logo {
     .welcome-snippet {
         margin-top: 0;
     }
+}   
+
+@media only screen and (max-width: 400px) {
+    
+    .welcome-snippet {
+        width: 80%;
+    }
+    .welcome-message {
+        width: 80%;
+        text-align: center;
+    }
+    .we-do {
+        height: auto;
+    }
 }    
+
+
 
 .we-do {
     height: 25rem;
@@ -261,6 +277,14 @@ div.logo {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 700px) {   
+    .we-do {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .container_we-do {
@@ -284,6 +308,9 @@ div.logo {
     }
     .welcome-snippet {
         margin-top: 0;
+    }
+    .container_we-do {
+        width: 15rem;
     }
 }    
 
@@ -352,6 +379,9 @@ footer .container {
         }
         .mobile-footer {
             padding: 1rem 0rem;
+            height: auto;
+        }
+        .background-welcome {
             height: auto;
         }
 
