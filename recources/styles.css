@@ -298,6 +298,11 @@ div.logo {
     font-size: 1rem;
 }
 
+.button-contact:hover {
+    background-color: rgba(16, 113, 138, 0.9);
+    cursor: pointer;
+}
+
 .button-container {
     display: flex;
     justify-content: center;
