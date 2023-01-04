@@ -12,11 +12,12 @@ html {
 }
 
 main {
-    padding: 6rem 0rem 2rem 0rem;
+    padding-top: 4rem;
 }
 
-.black {
-    background-color: rgb(20, 20, 20);
+a {
+    color: white;
+    text-decoration: none;
 }
 
 h1 {
@@ -32,6 +33,17 @@ h2 {
 h3 {
     font-size: 2rem;
     font-weight: 600;
+}
+    
+h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0.15rem;
 }
 /* ------ ↑ UNIVERSAL [END] ↑ ------ */
 
@@ -51,7 +63,6 @@ header {
 }
 
 header a {
-    text-decoration: none;
     color: hsl(162, 18%, 78%);
 }
 
@@ -95,10 +106,10 @@ div.logo {
             overflow: hidden;
           }
         
-          @media only screen and (max-width: 920px) {
+        @media only screen and (max-width: 920px) {
             .dropdown {
                 display: block;
-                align-items: flex-start ;
+                align-items: flex-start;
             }  
             nav {
                 display: none;
@@ -116,9 +127,11 @@ div.logo {
         header {
             height: 6rem;
           }
+          main {
+            padding-top: 6rem;
+          }
         }
 
-        
           /* Dropdown button */
           .dropdown .dropbtn {
             font-size: 1.5rem;
@@ -132,15 +145,15 @@ div.logo {
           }
           
           /* Add a background color to navbar links on hover */
-          .navbar a:hover, .dropdown:hover .dropbtn {
-            background-color: rgba(0, 10, 15, 0.9);
+          .dropdown:hover .dropbtn {
+            background-color: hsla(200, 100%, 3%, 0.9);
           }
           
           /* Dropdown content (hidden by default) */
           .dropdown-content {
             display: none;
             position: absolute;
-            background-color: rgb(20, 20, 20);
+            background-color: hsla(200, 100%, 3%, 0.9);
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
@@ -158,7 +171,7 @@ div.logo {
           
           /* Add a grey background color to dropdown links on hover */
           .dropdown-content a:hover {
-            background-color: rgba(0, 49, 71, 0.9);;
+            background-color: rgba(0, 49, 71, 0.9);
           }
           
           /* Show the dropdown menu on hover */
@@ -168,6 +181,126 @@ div.logo {
 /* ------ ↑ HEADER [END] ↑ ------ */
 
 /* ------ ↓ MAIN [BEGINNING] ↓ ------ */
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.background-welcome {
+    background-image: linear-gradient(hsl(184, 38%, 52%), hsl(184, 100%, 19%));
+    flex-direction: row;
+    height: 35rem;
+}
+
+.flex {
+    flex-basis: 67.5rem;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.welcome {
+    height: 35rem;
+}
+
+.welcome-snippet {
+    background-color: hsla(0, 0%, 10%, 0.9);
+    height: 6rem;
+    width: 20rem;
+    margin-top: 8rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.5rem;
+    margin-left: 1rem;
+}
+
+.welcome-message {
+    margin-top: 1rem;
+    width: 20rem;
+    height: auto;
+    display: flex;
+    flex-basis: 10rem;
+    flex-shrink: 1;
+    flex-grow: 0;
+    color: white;
+    letter-spacing: 0.13rem;
+    line-height: 2rem;
+    word-spacing: 0.3rem;
+    margin-left: 1rem;
+}
+
+.background-container-programming {
+    background-image: url(./images/programming.jpg);
+    width: 100%;
+    height: 19rem;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 799px) {
+    .welcome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .welcome-snippet {
+        margin-top: 0;
+    }
+}    
+
+.we-do {
+    height: 25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container_we-do {
+    width: 25rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-shrink: 1;
+}
+
+.container_we-do h2 {
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 799px) {
+    .we-do {
+        height: 40rem;
+    }
+    .welcome-snippet {
+        margin-top: 0;
+    }
+}    
+
+.button-contact {
+    background-color: rgba(9, 77, 94, 0.9);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
 
 /* ------ ↑ MAIN [END] ↑ ------ */
 
@@ -191,6 +324,10 @@ footer section {
     text-align: center;
 }
 
+.mobile-footer {
+    font-size: 0.8rem;
+}
+
 footer .container {
     display: flex;
     flex-direction: row;
@@ -212,5 +349,10 @@ footer .container {
         }
 
 }
+
+footer a {
+    color: hsl(162, 18%, 78%);
+}
+
 /* ------ ↑ FOOTER [END] ↑ ------ */
 
