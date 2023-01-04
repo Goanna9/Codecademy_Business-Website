@@ -317,7 +317,7 @@ div.logo {
 }    
 
 .button-contact {
-    background-color: rgba(9, 77, 94, 0.9);
+    background-color: rgba(18, 172, 172, 0.9);
     border: none;
     color: white;
     padding: 15px 32px;
@@ -328,7 +328,7 @@ div.logo {
 }
 
 .button-contact:hover {
-    background-color: rgba(16, 113, 138, 0.9);
+    background-color: rgba(34, 214, 214, 0.9);
     cursor: pointer;
 }
 
